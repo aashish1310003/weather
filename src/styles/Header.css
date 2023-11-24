@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:30px;background-color: black;
+    border-bottom: 1px white;
+}
+
+h3{
+    color: white;
+}

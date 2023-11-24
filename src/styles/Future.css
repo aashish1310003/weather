@@ -1,0 +1,18 @@
+.day {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px; /* Set a maximum height for the container, adjust as needed */
+  }
+  
+  .horizontal-card1 {
+    background-color: #161A1D;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Add any other styling properties as needed */
+  
