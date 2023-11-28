@@ -2,9 +2,10 @@ import { React, useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/Future.css"
 import "../styles/Future.css"
+import Test from "../test/test";
 
 var currentDate = new Date();
-var next5Dates = Array.from({ length: 7 }, (_, index) => {
+var next5Dates = Array.from({ length: 10 }, (_, index) => {
     var nextDate = new Date(currentDate);
     nextDate.setDate(currentDate.getDate() + index);
     return nextDate;
@@ -72,9 +73,9 @@ const Future = () => {
   return (
     <div className="day">{}
       {Array.isArray(finalData) && finalData.map((item, index) => (
-        <div key={item.id} className="horizontal-card1">
-          <p style={{ color: "white" }}>{item.sum.toFixed(2)} Kw</p>
-          <div>
+        <div key={index} className="horizontal-card1">
+          <p key={item.id} style={{ color: "white" }}>{item.sum.toFixed(2)} Kw</p>
+          <div key={item.id}>
             {
               // Assuming item.date is a string like "11/24/2023"
               (() => {
